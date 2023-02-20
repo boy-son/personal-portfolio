@@ -29,6 +29,11 @@ font-size: 2rem;
 margin: 1rem 0;
 }
 
+.work-title {
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
 nav {
 margin-bottom: 1rem;    
 }
@@ -60,12 +65,23 @@ transition: color 0.3s;
 .links a:hover {
 color: gray;
 }
-.container-one, .container-two, .container-three, .container-four {
-width: 25%;
-display: flex;
-flex-direction: column;
-margin-bottom: 2rem;    
-}
+
+.container-one {
+    width: 200%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: auto;   
+} 
+
+.container-two, .container-three, .container-four {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: auto;    
+    }
 
 .p1, .p2, .p3, .p4 {
 background-color: lightgray;
@@ -73,15 +89,32 @@ padding: 1rem;
 font-weight: bold;    
 }
 
-.img-1 {
-height: 125%;
-width: auto;    
+a .img-1 {
+    display: block;
+    width: 400%;
+    height: auto;
+    object-fit: cover;
+  }
+
+a .img-1:hover {
+border: 2px solid blue;  
 }
 
-.img-2, .img-3, .img-4 {
-    width: auto;
+  a .img-2 {
+    display: block;
+    width: 200%;
+    height: auto;
+    object-fit: cover;  
+  }
+
+a .img-2:hover {
+border: 2px solid blue;   
+}
+ .img-3, .img-4 {
+    width: 200%;
     height: auto;    
     }
+
 .biography {
 margin-top: 2rem;
 line-height: 1.5;
